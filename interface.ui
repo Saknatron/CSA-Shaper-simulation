@@ -1,0 +1,2110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Simulation</class>
+ <widget class="QMainWindow" name="Simulation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>1200</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1600</width>
+    <height>1200</height>
+   </size>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>1501</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>742</width>
+      <height>81</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 32pt &quot;KMITLGO&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Silicon Radiation Detector Platform</string>
+    </property>
+   </widget>
+   <widget class="MplWidget" name="MplWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>160</y>
+      <width>1081</width>
+      <height>971</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1081</width>
+      <height>971</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgb(255, 255, 255)</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>160</y>
+      <width>401</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>401</width>
+      <height>371</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(255, 255, 255)</string>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="Fixed">
+     <attribute name="title">
+      <string>Fixed</string>
+     </attribute>
+     <widget class="QPushButton" name="LogBT_list">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>350</y>
+        <width>21</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;KMITLGO&quot;;
+color:rgb(255,255,255);
+background: rgb(100, 100, 100)</string>
+      </property>
+      <property name="text">
+       <string>?</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>330</y>
+        <width>331</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>10</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Element</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="circuit_list">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>21</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;KMITLGO&quot;;
+color:rgb(255,255,255);
+background: rgb(100, 100, 100)</string>
+      </property>
+      <property name="text">
+       <string>i</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>OP-AMP</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_list">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>432</y>
+        <width>331</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>100</number>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>90</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>2nd value</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>1st value</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>4th value</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>170</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>3rd value</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>250</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>6th value</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>250</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>5th value</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_listop">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>51</height>
+       </size>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string notr="true" comment="Vpeak">TL082I</string>
+      </property>
+      <property name="insertPolicy">
+       <enum>QComboBox::InsertAtBottom</enum>
+      </property>
+      <item>
+       <property name="text">
+        <string>TL082I</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OPA657</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OPA859</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OPA818</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ADA4817</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ADA4637</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBox_listelm">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>30</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>51</height>
+       </size>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string notr="true" comment="Vpeak">Rf</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Rf</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rpz</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rhp</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rlp</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cf</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cpz</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cph</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Clp</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cc</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cpcb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cdet</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Vps</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="v1">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>110</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="v2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="v3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>190</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="v4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>190</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="v5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>270</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="v6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>270</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="RunBT_list">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>350</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;KMITLGO&quot;;
+background: rgb(223, 223, 223)</string>
+      </property>
+      <property name="text">
+       <string>RUN</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_runlist">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>350</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>51</height>
+       </size>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string notr="true" comment="Vpeak">Noise</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Noise</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CSA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OUT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ENC</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="sweep">
+     <attribute name="title">
+      <string>Sweep</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Start value</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>130</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Last value</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>30</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Element</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="LogBT_sw">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>350</y>
+        <width>21</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;KMITLGO&quot;;
+color:rgb(255,255,255);
+background: rgb(100, 100, 100)</string>
+      </property>
+      <property name="text">
+       <string>?</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>OP-AMP</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_swop">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>50</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>51</height>
+       </size>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string notr="true" comment="Vpeak">TL082I</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>TL082I</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OPA657</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OPA859</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OPA818</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ADA4817</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ADA4637</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>230</y>
+        <width>331</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>260</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Sweep type</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>260</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Number of point / Increate</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_sw">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>432</y>
+        <width>331</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>100</number>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="circuit_sw">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>50</y>
+        <width>21</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;KMITLGO&quot;;
+color:rgb(255,255,255);
+background: rgb(100, 100, 100)</string>
+      </property>
+      <property name="text">
+       <string>i</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_swelm">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>131</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>51</height>
+       </size>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string notr="true" comment="Vpeak">Rf</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Rf</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rpz</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rhp</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rlp</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cf</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cpz</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cph</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Clp</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cc</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cpcb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cdet</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Vps</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="StartV">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LastV">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>150</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="swetype">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>280</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>51</height>
+       </size>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string notr="true" comment="Vpeak"/>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OCT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>DEC</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="numpoint">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>280</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="RunBT_sw">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>350</y>
+        <width>131</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;KMITLGO&quot;;
+background: rgb(223, 223, 223)</string>
+      </property>
+      <property name="text">
+       <string>RUN</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_runsw">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>350</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>51</height>
+       </size>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string notr="true" comment="Vpeak">Noise</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Noise</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CSA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OUT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ENC</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="enc">
+     <attribute name="title">
+      <string>ENC</string>
+     </attribute>
+     <widget class="QProgressBar" name="progressBar">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>440</y>
+        <width>371</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="up_1">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>80</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;KMITLGO&quot;;
+background: rgb(0, 170, 0);
+color: rgb(240, 240, 240);</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clear_1">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>110</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;KMITLGO&quot;;
+background:  rgb(200, 0, 0);
+color:rgb(240, 240, 240);</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clear_2">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>110</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;KMITLGO&quot;;
+background:rgb(200, 0, 0);
+color:rgb(240, 240, 240);</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="up_2">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>80</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 15pt &quot;KMITLGO&quot;;
+background:rgb(0, 170, 0);
+color: rgb(240, 240, 240);</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="LogBT_enc">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>346</x>
+        <y>360</y>
+        <width>31</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;KMITLGO&quot;;
+background: rgb(210, 210, 210)</string>
+      </property>
+      <property name="text">
+       <string>?</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>16</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>340</y>
+        <width>371</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listWidget_1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>171</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(245, 245, 245)</string>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="listWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>171</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(245, 245, 245)</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_enc1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>51</height>
+       </size>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string notr="true" comment="Vpeak">--</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>--</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rf</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rpz</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rhp</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rlp</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cf</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cpz</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cph</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Clp</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cc</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cpcb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cdet</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Vps</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBox_enc2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>51</height>
+       </size>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string notr="true" comment="Vpeak">--</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>--</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rf</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rpz</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rhp</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rlp</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cf</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cpz</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cph</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Clp</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cc</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cpcb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cdet</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Vps</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="Value1">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Value2">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_encop">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>370</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>51</height>
+       </size>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="currentText">
+       <string notr="true" comment="Vpeak">TL082I</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>TL082I</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OPA657</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OPA859</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OPA818</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ADA4817</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ADA4637</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="RunBT_enc">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>360</y>
+        <width>141</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;KMITLGO&quot;;
+background: rgb(223, 223, 223)</string>
+      </property>
+      <property name="text">
+       <string>RUN</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>360</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>OP-AMP</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="setup">
+     <attribute name="title">
+      <string>Set up</string>
+     </attribute>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Rf - CSA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>250</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Rpz - polezero</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>170</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cf - CSA</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>330</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cpz - polezero</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>90</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Rhp - Shaper</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>90</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Rlp - Shaper</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>170</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Chp - Shaper</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>170</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Clp - Shaper</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>330</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Vps - input</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>330</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cdet - Detector</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>250</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Ctest - Charge</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>250</y>
+        <width>101</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cpcb - Stray</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="circuit">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>430</y>
+        <width>21</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;KMITLGO&quot;;
+color:rgb(255,255,255);
+background: rgb(100, 100, 100)</string>
+      </property>
+      <property name="text">
+       <string>i</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>500</y>
+        <width>341</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>100</number>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="rfn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>110</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>100e6</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="cfn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>190</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>1e-12</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="rhpn">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>110</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>1e6</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="chpn">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>190</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>100e-9</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="rlpn">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>110</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>1e6</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="clpn">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>190</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>10e-12</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="rpzn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>270</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>100e3</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="cpzn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>350</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>500e-12</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ctestn">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>270</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>1.7e-12</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="cdetn">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>350</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="cpcbn">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>270</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>17e-12</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="pulsen">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>350</y>
+        <width>101</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(240, 240, 240);
+font: 25 14pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>1570e-3</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="setbt">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>430</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;KMITLGO&quot;;
+background: rgb(223, 223, 223)</string>
+      </property>
+      <property name="text">
+       <string>SET</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bt_ccf">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>KMITLGO</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;KMITLGO&quot;;
+background: rgb(223, 223, 223)</string>
+      </property>
+      <property name="text">
+       <string>Circuit File</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bt_ckf">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>20</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;KMITLGO&quot;;
+background: rgb(223, 223, 223)</string>
+      </property>
+      <property name="text">
+       <string>Check</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="namefile">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>341</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;KMITLGO&quot;;</string>
+      </property>
+      <property name="text">
+       <string>C:/Users/USER/OneDrive - KMITL/KMITL-3C/3-Summer/PyLTSpice/noise/RAD-AMP.asc</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>namefile</zorder>
+     <zorder>label_5</zorder>
+     <zorder>label_9</zorder>
+     <zorder>label_10</zorder>
+     <zorder>label_11</zorder>
+     <zorder>label_12</zorder>
+     <zorder>label_13</zorder>
+     <zorder>label_14</zorder>
+     <zorder>label_15</zorder>
+     <zorder>label_16</zorder>
+     <zorder>label_17</zorder>
+     <zorder>label_18</zorder>
+     <zorder>label_19</zorder>
+     <zorder>circuit</zorder>
+     <zorder>progressBar_2</zorder>
+     <zorder>rfn</zorder>
+     <zorder>cfn</zorder>
+     <zorder>rhpn</zorder>
+     <zorder>chpn</zorder>
+     <zorder>rlpn</zorder>
+     <zorder>clpn</zorder>
+     <zorder>rpzn</zorder>
+     <zorder>cpzn</zorder>
+     <zorder>ctestn</zorder>
+     <zorder>cdetn</zorder>
+     <zorder>cpcbn</zorder>
+     <zorder>pulsen</zorder>
+     <zorder>setbt</zorder>
+     <zorder>bt_ccf</zorder>
+     <zorder>bt_ckf</zorder>
+    </widget>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>120</y>
+      <width>1511</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>750</y>
+      <width>401</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>tabWidget</zorder>
+   <zorder>MplWidget</zorder>
+   <zorder>line</zorder>
+   <zorder>textBrowser</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1600</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="9"/>
+ <customwidgets>
+  <customwidget>
+   <class>MplWidget</class>
+   <extends>QWidget</extends>
+   <header>mplwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
